@@ -24,7 +24,7 @@ wapi.signIn("admin", "admin").then((token) => {
 	wapi.connect().then((client) => {
 		if (!client) throw new Error("Failed to connect");
 
-		wapi.query.library.one('test').fetch()then((library) => {
+		wapi.query.library.one('test').fetch().then((library) => {
 			console.log(library);
 		})
 	});
