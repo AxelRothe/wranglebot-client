@@ -1,14 +1,8 @@
-# WrangleBot WebClient `preview`
+// WrangleBot Client Example
+// Example of how to use the client in a browser environment
 
-## Example Usage
-
-Example of how to use the client in a browser environment with the current preview build.
-
-`.query` is analog to the NodeJS `query` functions on the server side.
-
-
-```js
 // import the client from the src folder (this will be changed when we publish to npm)
+
 import WrangleBotAPIClient from "../src/Client";
 
 // helper to get the location of the app
@@ -35,4 +29,4 @@ wapi.signIn("admin", "admin").then((token) => {
 		})
 	});
 });
-```
+
