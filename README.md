@@ -14,7 +14,7 @@ import WrangleBotAPIClient from "../src/Client";
 // helper to get the location of the app
 const appLocation = `${window.location.protocol}//${window.location.hostname}${
 	window.location.port
-		? ":" + (window.location.port - 100)
+		? ":" + (window.location.port - 100) // client and server tend to not run on the same port so adjust as nessecary
 		: ""
 }`;
 
